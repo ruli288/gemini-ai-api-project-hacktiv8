@@ -1,0 +1,47 @@
+/* CSS Custom styles */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Gradient background from orange to blue */
+    background: linear-gradient(to bottom right, #fb923c, #3b82f6); /* Tailwind orange-400 to blue-500 */
+}
+.tab-active {
+    background-color: #4f46e5; /* Indigo-600 */
+    color: white;
+}
+.tab-inactive {
+    background-color: #e5e7eb; /* Gray-200 */
+    color: #374151; /* Gray-700 */
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+.spinner {
+    animation: spin 1s linear infinite;
+}
+.output-area {
+    min-height: 200px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+.mic-listening {
+    color: #ef4444; /* Red-500 */
+}
+.feature-button {
+    background-color: #f0f2f5; /* Gray-100 */
+    border: 1px solid #d1d5db; /* Gray-300 */
+}
+.feature-button:hover {
+    background-color: #e5e7eb; /* Gray-200 */
+}
+/* Style for media player controls */
+.media-controls button {
+    background-color: #e5e7eb; /* bg-gray-200 */
+    color: #374151; /* text-gray-700 */
+    font-weight: 600; /* font-semibold */
+    padding: 0.5rem 1rem; /* py-2 px-4 */
+    border-radius: 0.5rem; /* rounded-lg */
+    transition: background-color 0.3s; /* transition-colors duration-300 */
+}
+.media-controls button:hover {
+    background-color: #d1d5db; /* hover:bg-gray-300 */
+}
